@@ -6,87 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
     <style>
       body {
-       
-       background-image: url("leaf2.jpg");
+        background-image: url("leaf2.jpg");
         font-family: "Raleway";
       }
-      img{
-          max-width: 100%;
-          height: auto;
+      img {
+        max-width: 100%;
+        height: auto;
       }
-      .center{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+      .headtext {
+        color: #f5f5f5;
+        width: 100%;
+        text-align: center; 
+    }     
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
-      .popup{
-          width:550px;
-          height: 380px;
-          padding: 30px 25px;
-          background-color: #f5f5f5;
-          border-radius: 10px;
-          box-sizing: border-box;
-          z-index: 2;
-          text-align: center;
-        }
-        .popup .title{
-            margin: 5px 0px;
-            font-size: 50px;
-            font-weight: 800;
+      .popup {
+        width: 550px;
+        height: 380px;
+        padding: 30px 25px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 2;
+        text-align: center;
+      }
 
-        }
-        .popup .description{
-            margin-top: 65px;
-            color: #222;
-            font-size: 20px;
-            padding: 5px;
-
-        }
-        .popup .dismiss-btn{
-        
-             margin-top: 55px;
-        }
-        .popup .dismiss-btn button{
-            width: 90%;
-            padding: 10px 20px;
-            background-color: 	#2dbb79;
-            color: #f5f5f5;
-            border: 2px solid 	#2dbb79;
-            font-size: 16px;
-            font-weight:600;
-            outline: none;
-            border-radius: 10px;
-        }
-
-
+      @media only screen and (max-width: 616px) {
+        .headtext {
+        color: #f5f5f5;
+        width: 100%;
+        font-size: 36px;
+        text-align: center; 
+    }     
+        .popup {
+        width: 310px;
+        height: 390px;
+        padding: 3px 5px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-sizing: border-box;
+        z-index: 2;
+        text-align: center;
+      }
+      .popup .title {
+        margin: 5px 0px;
+        font-size: 10px;
+      }
+      .popup .description {
+        margin-top: 26px;
+        color: #222;
+        font-size: 6px;
+      }
+      .popup .dismiss-btn {
+        margin-top: 45px;
+        /* margin-bottom: 20px; */
+      }
+      .popup .dismiss-btn button {
+        width: 10%;
+        padding: 1px 2px;
+        background-color: #2dbb79;
+        color: #f5f5f5;
+        border: 2px solid #2dbb79;
+        font-size: 26px;
+        font-weight: 800;
+        outline: none;
+        border-radius: 10px;
+      }
+          
+      }
+      .popup .title {
+        margin: 5px 0px;
+        font-size: 50px;
+        font-weight: 800;
+      }
+      .popup .description {
+        margin-top: 65px;
+        color: #222;
+        font-size: 20px;
+        padding: 5px;
+      }
+      .popup .dismiss-btn {
+        margin-top: 55px;
+      }
+      .popup .dismiss-btn button {
+        width: 90%;
+        padding: 10px 20px;
+        background-color: #2dbb79;
+        color: #f5f5f5;
+        border: 2px solid #2dbb79;
+        font-size: 16px;
+        font-weight: 600;
+        outline: none;
+        border-radius: 10px;
+      }
     </style>
     <title>Document</title>
   </head>
   <body>
-      <!-- <img src="plant.webp" alt="background" > -->
-      <div class="popup center">
+    <!-- <img src="plant.webp" alt="background" > -->
+    <div class="headtext">
+      <h2>TravelUstad</h2>
+    </div>
+
+    <div class="popup center">
       <div class="title">
         <a>Thank You !</a>
       </div>
-    
-    <div class="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt
-      aspernatur accusamus sit explicabo nam cum accusantium sint autem
-     
-    </div>
-    <div class="dismiss-btn">
-      <button id="dismiss-popup-btn">Click Here to download Now</button>
-    </div>
 
-    
-</div>
+      <div class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        incidunt aspernatur accusamus sit explicabo nam cum accusantium sint
+        autem
+      </div>
+      <div class="dismiss-btn">
+        <button id="dismiss-popup-btn">Click Here to download Now</button>
+      </div>
+    </div>
   </body>
 </html>
